@@ -1,0 +1,22 @@
+[
+  {
+    "match": ["bench.MegamorphicBenchmark.lookupInt"],
+    "inline": ["+bench.Keys$IntKey.hashCode"],
+    "C2": { "MaxInlineSize": 500 }
+  },
+  {
+    "match": ["bench.MegamorphicBenchmark.lookupLong"],
+    "inline": ["+bench.Keys$LongKey.hashCode"],
+    "C2": { "MaxInlineSize": 500 }
+  },
+  {
+    "match": ["bench.MegamorphicBenchmark.lookupPair"],
+    "inline": ["+bench.Keys$PairKey.hashCode"],
+    "C2": { "MaxInlineSize": 500 }
+  },
+  {
+    "match": ["bench.MegamorphicBenchmark.lookupString"],
+    "inline": ["+bench.Keys$StringKey.hashCode"],
+    "C2": { "MaxInlineSize": 500 }
+  }
+]
